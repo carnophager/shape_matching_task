@@ -11,14 +11,10 @@ public:
   void compute([[maybe_unused]]std::vector<PackedImage> &images) {
     FunctionTracer<std::chrono::milliseconds> tracer("compute", "ms");
     //TODO: fill solution
-    int s = 5;
-    int d = s+ 5;
-    std::cout << "solutio" << std::endl;
   }
 
   void compute([[maybe_unused]]std::vector<StrideImage> &images) {
     FunctionTracer<std::chrono::milliseconds> tracer("compute", "ms");
-    //TODO: fill solution
     tracer.captureDuration();
     size_t images_count = images.size();
     for ( int id = 0; id < images_count; ++id) {
